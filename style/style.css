@@ -19,6 +19,7 @@
 .calculator-body{
     background-color: rgba(20, 20, 20, 0.9);
     width: fit-content;
+    height: 80%;
     border-radius: 3px;
 }
 
