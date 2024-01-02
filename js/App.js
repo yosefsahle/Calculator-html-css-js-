@@ -12,8 +12,8 @@ const zero = document.getElementById("zero");
 
 //operations
 const dot = document.getElementById("dot");
-const Clear = document.getElementById("clear");
-const Add = document.getElementById("add");
+const clear = document.getElementById("clear");
+const addition = document.getElementById("addition");
 const subtract = document.getElementById("subtract");
 const divide = document.getElementById("divide");
 const multiply = document.getElementById("multiply");
