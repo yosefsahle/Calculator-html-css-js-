@@ -26,22 +26,22 @@
             <table>
                 <tr>
                     <td id="clear" onclick="clear()" class="operational-key"><i class="fa-solid fa-c"></i></td>
-                    <td id="divide" class="operational-key"><i class="fa-solid fa-divide"></i></td>
-                    <td id="multiply" class="operational-key"><i class="fa-solid fa-xmark"></i></td>
+                    <td id="divide" onclick="divide()" class="operational-key"><i class="fa-solid fa-divide"></i></td>
+                    <td id="multiply" onclick="multiply()" class="operational-key"><i class="fa-solid fa-xmark"></i></td>
                     <td id="delet" class="operational-key"><i class="fa-solid fa-delete-left"></i></td>
                 </tr>
                 <tr>
                     <td id="seven" onclick="numseven()"><i class="fa-solid fa-7"></i></td>
                     <td id="eight" onclick="numeight()"><i class="fa-solid fa-8"></i></td>
                     <td id="nine" onclick="numnine()"><i class="fa-solid fa-9"></i></td>
-                    <td id="subtract" class="operational-key"><i class="fa-solid fa-minus"></i></td>
+                    <td id="subtract" onclick="minus()" class="operational-key"><i class="fa-solid fa-minus"></i></td>
                 </tr>
 
                 <tr>
                     <td id="four" onclick="numfour()"><i class="fa-solid fa-4"></i></td>
                     <td id="five" onclick="numfive()"><i class="fa-solid fa-5"></i></td>
                     <td id="six" onclick="numsix()"><i class="fa-solid fa-6"></i></td>
-                    <td id="addition" class="operational-key"><i class="fa-solid fa-plus"></i></td>
+                    <td id="addition" onclick="plus()" class="operational-key"><i class="fa-solid fa-plus"></i></td>
                 </tr>
                 <tr>
                     <td  id="one" onclick="numone()"><i class="fa-solid fa-1"></i></td>
@@ -99,18 +99,43 @@
     };
 
     function numdot(){
-        document.getElementById("screen").value = '.';
+        document.getElementById("screen").value += '.';
     };
 
-    function clear(){
-        document.getElementById("screen").value = "";
-    }
+    function plus(){
+        document.getElementById("screen").value += '+';
+    };
 
-    function add(){}
-    function sub(){}
-    function div(){}
-    function mul(){}
+    function minus(){
+        document.getElementById("screen").value += '-';
+    };
+
+    function divide(){
+        document.getElementById("screen").value += '/';
+    };
+
+    function multiply(){
+        document.getElementById("screen").value += '*';
+    };
     
+    
+
+
+
+
+    function add(a,b){
+        a+b;
+    };
+    function sub(a,b){
+        a-b;
+    };
+    function div(a,b){
+        a/b;
+    };
+    function mul(a,b){
+        a*b;
+    };
+
 
     </script>
 </body>
