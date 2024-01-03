@@ -47,7 +47,7 @@
                     <td  id="one" onclick="numone()"><i class="fa-solid fa-1"></i></td>
                     <td id="two" onclick="numtwo()"><i class="fa-solid fa-2"></i></td>
                     <td id="three" onclick="numthree()"><i class="fa-solid fa-3"></i></td>
-                    <td id="equal" rowspan="2" class="operational-key"><i class="fa-solid fa-equals"></i></td>
+                    <td id="equal" onclick="equal()" rowspan="2" class="operational-key"><i class="fa-solid fa-equals"></i></td>
                 </tr>
                 <tr>
                     <td id="percent" class="operational-key"><i class="fa-solid fa-percent"></i></td>
@@ -120,9 +120,6 @@
     
     
 
-
-
-
     function add(a,b){
         a+b;
     };
@@ -135,6 +132,37 @@
     function mul(a,b){
         a*b;
     };
+
+    function replaceCharacter(string, index, replacement) {
+  return (
+    string.slice(0, index) +
+    replacement +
+    str.slice(index + replacement.length)
+  );
+}
+
+    
+
+    function equal(){
+        let str = document.getElementById("screen").value;
+        let str1 = document.getElementById("screen").value;
+        let newstr = str1;
+        str1[2] = ','; 
+
+
+        // for (let i = 0; i < str.length; i++) {
+        //     if(str[i] == '+' || str[i] == '-' || str[i] == '/' || str[i] == '*'){
+        //         newstr[i] = replaceCharacter(str,i,',');
+        //     }
+        //     else{
+        //         newstr[i] = str[i];
+        //     }
+        // };
+        
+        document.getElementById("screen").value = str1;
+    }
+
+
 
 
     </script>
