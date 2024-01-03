@@ -25,7 +25,7 @@
         <div>
             <table>
                 <tr>
-                    <td id="clear" class="operational-key"><i class="fa-solid fa-c"></i></td>
+                    <td id="clear" onclick="clear()" class="operational-key"><i class="fa-solid fa-c"></i></td>
                     <td id="divide" class="operational-key"><i class="fa-solid fa-divide"></i></td>
                     <td id="multiply" class="operational-key"><i class="fa-solid fa-xmark"></i></td>
                     <td id="delet" class="operational-key"><i class="fa-solid fa-delete-left"></i></td>
@@ -101,6 +101,10 @@
     function numdot(){
         document.getElementById("screen").value = '.';
     };
+
+    function clear(){
+        document.getElementById("screen").value = "";
+    }
 
     </script>
 </body>
