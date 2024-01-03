@@ -31,36 +31,77 @@
                     <td id="delet" class="operational-key"><i class="fa-solid fa-delete-left"></i></td>
                 </tr>
                 <tr>
-                    <td id="seven"><i class="fa-solid fa-7"></i></td>
-                    <td id="eight"><i class="fa-solid fa-8"></i></td>
-                    <td id="nine"><i class="fa-solid fa-9"></i></td>
+                    <td id="seven" onclick="numseven()"><i class="fa-solid fa-7"></i></td>
+                    <td id="eight" onclick="numeight()"><i class="fa-solid fa-8"></i></td>
+                    <td id="nine" onclick="numnine()"><i class="fa-solid fa-9"></i></td>
                     <td id="subtract" class="operational-key"><i class="fa-solid fa-minus"></i></td>
                 </tr>
 
                 <tr>
-                    <td id="four"><i class="fa-solid fa-4"></i></td>
-                    <td id="five"><i class="fa-solid fa-5"></i></td>
-                    <td id="six"><i class="fa-solid fa-6"></i></td>
+                    <td id="four" onclick="numfour()"><i class="fa-solid fa-4"></i></td>
+                    <td id="five" onclick="numfive()"><i class="fa-solid fa-5"></i></td>
+                    <td id="six" onclick="numsix()"><i class="fa-solid fa-6"></i></td>
                     <td id="addition" class="operational-key"><i class="fa-solid fa-plus"></i></td>
                 </tr>
                 <tr>
                     <td  id="one" onclick="numone()"><i class="fa-solid fa-1"></i></td>
-                    <td id="one"><i class="fa-solid fa-2"></i></td>
-                    <td id="three"><i class="fa-solid fa-3"></i></td>
+                    <td id="two" onclick="numtwo()"><i class="fa-solid fa-2"></i></td>
+                    <td id="three" onclick="numthree()"><i class="fa-solid fa-3"></i></td>
                     <td id="equal" rowspan="2" class="operational-key"><i class="fa-solid fa-equals"></i></td>
                 </tr>
                 <tr>
                     <td id="percent" class="operational-key"><i class="fa-solid fa-percent"></i></td>
-                    <td id="zero"><i class="fa-solid fa-0"></i></td>
-                    <td id="dot">.</td>
+                    <td id="zero" onclick="numzero()"><i class="fa-solid fa-0"></i></td>
+                    <td id="dot" onclick="numdot()">.</td>
                 </tr>
             </table>
         </div>
     </div>
     <script>
-        function numone(){
-    document.getElementById("screen").value = 1;
-};
+    
+    function numone(){
+        document.getElementById("screen").value += 1;
+    };
+    function numtwo(){
+        document.getElementById("screen").value += 2;
+    };
+    
+    function numthree(){
+        document.getElementById("screen").value += 3;
+    };
+    
+    function numfour(){
+        document.getElementById("screen").value += 4;
+    };
+    
+    function numfive(){
+        document.getElementById("screen").value += 5;
+    };
+    
+    function numsix(){
+        document.getElementById("screen").value += 6;
+    };
+    
+    function numseven(){
+        document.getElementById("screen").value += 7;
+    };
+    
+    function numeight(){
+        document.getElementById("screen").value += 8;
+    };
+    
+    function numnine(){
+        document.getElementById("screen").value += 9;
+    };
+
+    function numzero(){
+        document.getElementById("screen").value += 0;
+    };
+
+    function numdot(){
+        document.getElementById("screen").value = '.';
+    };
+
     </script>
 </body>
 </html>
