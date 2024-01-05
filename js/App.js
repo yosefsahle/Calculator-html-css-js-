@@ -27,15 +27,3 @@ const screen = document.getElementById("screen");
 function numone(){
     document.getElementById("screen").value = 1;
 };
-
-function add(a,b) {
-    return a+b;
-}
-
-function sub(a,b) {
-    return a-b;
-}
-
-function divide(a,b) {
-    return a/b;
-}
