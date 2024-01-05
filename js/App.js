@@ -1,4 +1,4 @@
-//numbers
+8//numbers
 const one = document.getElementById("one");
 const two = document.getElementById("two");
 const three = document.getElementById("three");
@@ -38,8 +38,4 @@ function sub(a,b) {
 
 function divide(a,b) {
     return a/b;
-}
-
-function multiply(a,b) {
-    return a*b;
 }
