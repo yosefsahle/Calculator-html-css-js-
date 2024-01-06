@@ -24,6 +24,3 @@ const delet = document.getElementById("delet");
 //display
 const screen = document.getElementById("screen");
 
-function numone(){
-    document.getElementById("screen").value = 1;
-};
