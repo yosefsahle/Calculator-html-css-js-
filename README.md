@@ -1,3 +1,3 @@
-#Simple Calculator Using Html-Css-Js 
+#Simple Functional Calculator Using Html-Css-Js 
 
 #Yosef Sahle
